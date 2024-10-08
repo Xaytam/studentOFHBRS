@@ -12,14 +12,14 @@ class GermanTranslatorTest {
     public void NegativeNumberTest() {
         GermanTranslator translator = new GermanTranslator();
 
-        assertEquals("Übersetzung der Zahl " + -5 + " nicht möglich", translator.translateNumber(-5));
+        assertEquals("Übersetzung der Zahl " + -5 + " nicht möglich (Version: 1.0)", translator.translateNumber(-5));
     }
 
     @Test
     public void ZeroTest() {
         GermanTranslator translator = new GermanTranslator();
 
-        assertEquals("Übersetzung der Zahl " + 0 + " nicht möglich", translator.translateNumber(0));
+        assertEquals("Übersetzung der Zahl " + 0 + " nicht möglich (Version: 1.0)", translator.translateNumber(0));
     }
     @Test
     public void NumberBetween1And10Test() {
@@ -31,6 +31,6 @@ class GermanTranslatorTest {
     public void NumberBiggerThan10Test() {
         GermanTranslator translator = new GermanTranslator();
 
-        assertEquals("Übersetzung der Zahl " + 100 + " nicht möglich", translator.translateNumber(100));
+        assertEquals("Übersetzung der Zahl " + 100 + " nicht möglich (Version: 1.0)", translator.translateNumber(100));
     }
 }
