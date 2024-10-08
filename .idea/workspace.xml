@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Erste Erstellung einer Factory noch ohne Methoden">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Fast fertig aber bin nicht sicher mit die Excpetions teil">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codesSE2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codesSE2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/GermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/GermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/factory/TranslatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/factory/TranslatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/tests/GermanTranslatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung1/GermanTranslatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung1/GermanTranslatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,24 +22,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Xaytam"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Xaytam&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aldaGit/codesSEws24.git",
-    "accountId": "b733d003-66c5-4f44-ab90-03490f1bde48"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aldaGit/codesSEws24.git&quot;,
+    &quot;accountId&quot;: &quot;b733d003-66c5-4f44-ab90-03490f1bde48&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -49,9 +57,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.GermanTranslatorTest (1).executor": "Run",
+    "JUnit.GermanTranslatorTest.aTest.executor": "Run",
+    "JUnit.GermanTranslatorTest.bTest.executor": "Run",
+    "JUnit.GermanTranslatorTest.executor": "Run",
+    "JUnit.GermanTranslatorTest.test.executor": "Run",
+    "JUnit.org.hbrs.se1.ws24.exercises.uebung1 in codesSE2024.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -61,7 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,9 +90,105 @@
       <recent name="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung1.factory" />
+      <recent name="org.hbrs.se1.ws24.exercises.uebung1" />
       <recent name="org.hbrs.se1.ws24.exercises.uebung1.control" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung1.tests" />
+      <recent name="org.hbrs.se1.ws24.exercises.uebung1.control.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GermanTranslatorTest (1)">
+    <configuration name="GermanTranslatorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung1" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung1.GermanTranslatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung1.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests.GermanTranslatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GermanTranslatorTest.aTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung1.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests.GermanTranslatorTest" />
+      <option name="METHOD_NAME" value="aTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GermanTranslatorTest.bTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung1.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung1.tests.GermanTranslatorTest" />
+      <option name="METHOD_NAME" value="bTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.hbrs.se1.ws24.exercises.uebung1 in codesSE2024" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.exercises.uebung1" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GermanTranslatorTest (1)" />
+        <item itemvalue="JUnit.GermanTranslatorTest" />
+        <item itemvalue="JUnit.GermanTranslatorTest.bTest" />
+        <item itemvalue="JUnit.GermanTranslatorTest.aTest" />
+        <item itemvalue="JUnit.org.hbrs.se1.ws24.exercises.uebung1 in codesSE2024" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -91,7 +207,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727176957166</updated>
       <workItem from="1727176958305" duration="1892000" />
-      <workItem from="1728205391718" duration="1295000" />
+      <workItem from="1728205391718" duration="7962000" />
+      <workItem from="1728215767523" duration="18492000" />
     </task>
     <task id="LOCAL-00001" summary="Erste Erstellung einer Factory noch ohne Methoden">
       <option name="closed" value="true" />
@@ -101,7 +218,71 @@
       <option name="project" value="LOCAL" />
       <updated>1728206623865</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Erste Erstellung einer Factory noch ohne Methoden">
+      <option name="closed" value="true" />
+      <created>1728206728359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728206728359</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bereistellung einer Create Methoden">
+      <option name="closed" value="true" />
+      <created>1728206820268</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728206820268</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Eine weitere experimentelle Methode">
+      <option name="closed" value="true" />
+      <created>1728206893360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728206893360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Revert &quot;Bereistellung einer Create Methoden&quot;&#10;&#10;This reverts commit 7b8557f7">
+      <option name="closed" value="true" />
+      <created>1728207122610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728207122610</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Eine weitere experimentelle Methode">
+      <option name="closed" value="true" />
+      <created>1728207718371</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728207718371</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Eine weitere experimentelle Methode">
+      <option name="closed" value="true" />
+      <created>1728239533941</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728239533942</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fast fertig aber bin nicht sicher mit die Excpetions teil">
+      <option name="closed" value="true" />
+      <created>1728317674588</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728317674588</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fast fertig aber bin nicht sicher mit die Excpetions teil">
+      <option name="closed" value="true" />
+      <created>1728317719569</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728317719569</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +301,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Erste Erstellung einer Factory noch ohne Methoden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Erstellung einer Factory noch ohne Methoden" />
+    <MESSAGE value="Bereistellung einer Create Methoden" />
+    <MESSAGE value="Revert &quot;Bereistellung einer Create Methoden&quot;&#10;&#10;This reverts commit 7b8557f7" />
+    <MESSAGE value="Eine weitere experimentelle Methode" />
+    <MESSAGE value="Fast fertig aber bin nicht sicher mit die Excpetions teil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fast fertig aber bin nicht sicher mit die Excpetions teil" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/codesSEws24$org_hbrs_se1_ws24_exercises_uebung1_in_codesSE2024.ic" NAME="org.hbrs.se1.ws24.exercises.uebung1 in codesSE2024 Coverage Results" MODIFIED="1728216078923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.hbrs.se1.ws24.exercises.uebung1.*</FILTER>
+    </SUITE>
   </component>
 </project>
