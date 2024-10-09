@@ -7,14 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GermanTranslatorTest {
 
-
-    @Test
-    public void NegativeNumberTest() {
-        GermanTranslator translator = new GermanTranslator();
-
-        assertEquals("Übersetzung der Zahl " + -5 + " nicht möglich (Version: 1.0)", translator.translateNumber(-5));
-    }
-
     @Test
     public void ZeroTest() {
         GermanTranslator translator = new GermanTranslator();
@@ -22,15 +14,16 @@ class GermanTranslatorTest {
         assertEquals("Übersetzung der Zahl " + 0 + " nicht möglich (Version: 1.0)", translator.translateNumber(0));
     }
     @Test
-    public void NumberBetween1And10Test() {
+    public void testPositive() {
         GermanTranslator translator = new GermanTranslator();
 
         assertEquals("acht", translator.translateNumber(8));
     }
     @Test
-    public void NumberBiggerThan10Test() {
+    public void TestNegative() {
         GermanTranslator translator = new GermanTranslator();
 
         assertEquals("Übersetzung der Zahl " + 100 + " nicht möglich (Version: 1.0)", translator.translateNumber(100));
+        assertEquals("Übersetzung der Zahl " + -5 + " nicht möglich (Version: 1.0)", translator.translateNumber(-5));
     }
 }
